@@ -4,54 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
-    android:tag="fragmentB">
+    android:background="@color/teal_700">
 
     <TextView
-        android:id="@+id/tv_text_b"
+        android:id="@+id/textView_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="Fragment b"
+        android:layout_marginTop="20dp"
+        android:text="Fragment 2"
         android:textColor="#FBF9FA"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2_b"
-        android:layout_width="222dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="172dp"
-        android:text="TextView"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/buttonB"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/EditText_b" />
 
-    <TextView
-        android:id="@+id/textView3_b"
-        android:layout_width="145dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="288dp"
-        android:text="TextView"
-        android:textColor="#F1E2E2"
-        app:layout_constraintEnd_toEndOf="parent"
+    <EditText
+        android:id="@+id/EditText_b"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="#F8F0F0"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/button_b"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonB"
+        android:id="@+id/button_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
+        android:layout_marginEnd="24dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView3_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView2_b"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_b" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
